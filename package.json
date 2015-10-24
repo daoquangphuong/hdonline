@@ -1,0 +1,13 @@
+{
+  "title": "Hdonline",
+  "name": "Hdonline",
+  "version": "0.0.1",
+  "description": "Remove Advertise",
+  "main": "index.js",
+  "author": "Dao Quang Phuong",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT"
+}
