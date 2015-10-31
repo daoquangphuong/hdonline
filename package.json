@@ -5,6 +5,10 @@
   "description": "Remove Advertise",
   "main": "index.js",
   "author": "Dao Quang Phuong",
+  "scripts": {
+    "start": "jpm xpi",
+    "test": "jpm post --post-url http://localhost:8877/"
+  },
   "engines": {
     "firefox": ">=38.0a1",
     "fennec": ">=38.0a1"
