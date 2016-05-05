@@ -19,6 +19,7 @@ httpSniffer.sniffer.push({
             data = data.replace(/isVip = false;/g, 'isVip = true;');
             data = data.replace(/"uvip":false/g, '"uvip":true');
             data = data.replace(/"vads":true/g, '"vads":false');
+            data = data.replace("jwplayer('hdoplayer').getState() !=  null", 'false');
             return data;
         }
     }
