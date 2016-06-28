@@ -20,6 +20,7 @@ httpSniffer.sniffer.push({
             data = data.replace(/"uvip":false/g, '"uvip":true');
             data = data.replace(/"vads":true/g, '"vads":false');
             data = data.replace("jwplayer('hdoplayer').getState() !=  null", 'false');
+            data = data.replace("eval(function", "var oldJwplayer = jwplayer; var hook = 1; jwplayer = function (name) { if (hook) { hook = 0; return { setup: function (config) { var key = Object.keys(config.plugins)[0]; config.plugins[key].vads = false; oldJwplayer(name).setup(config); } } } return oldJwplayer(name); }; eval(function");
             return data;
         }
     }
